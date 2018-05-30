@@ -1,38 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package banking;
 import java.util.Scanner;
-class Bank {
 
-    float balance;
-    
-    Bank(float amount) {
-        balance = amount;
-    }
-    void newacc(int accn){
-     
-       
-    }
-
-    void deposit(float amount) {
-        balance += amount;
-    }
-
-    void withdraw(float amount) {
-        if (amount < 500) {
-            System.out.println("Insufficient bal");
-        } else {
-            balance -= amount;
-        }
-    }
-
-    void display() {
-        System.out.println("Balance is:" + balance);
-    }
-}
 
 /**
  *
@@ -42,8 +11,11 @@ public class Banking {
 
    
 
-    /**
+    /**This Code Performs Basic Operations Such  1.Deposit 2.Withdraw 3.Enquire
+     * User Enters His Choice If He Wants To Deposit He Chooses 1 If He Wants To
+     * Withdraw He Chooses 2 And Balance Is Checked With 3  
      * @param args the command line arguments
+     *  
      */
     public static void main(String[] args) {
          float amount;
@@ -81,7 +53,7 @@ public class Banking {
                     break;
 
                 case 4:
-                  break;
+                        break Exit;
                 default:
                     System.out.println("Invalid choice");
             }
@@ -90,7 +62,7 @@ public class Banking {
 
     }
 
-        // TODO code application logic here
+
         
     }
     
